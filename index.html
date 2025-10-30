@@ -3,46 +3,124 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EcoBin</title>
+    <title>Ecobin - Home</title>
     <link rel="stylesheet" href="css/styles.css">
-</head> 
+</head>
 <body>
+
+    <!-- Header -->
     <header>
-        <h1>EcoBin</h1>
-        <nav>
-            <ul>
-                <li> <a href="index.html"> Inicio </a></li>                
-            </ul>
-        </nav>
+        <h1>Ecobin</h1>
+        <p>Gestión inteligente de contenedores de reciclaje</p>
     </header>
 
-    <img src="/img/Contenedor.jpg" height="300">
+    <!-- Navbar -->
+    <nav>
+        <a href="#">Inicio</a>
+        <a href="#">Contenedores</a>
+        <a href="#">Estadísticas</a>
+        <a href="#">Usuarios</a>
+        <a href="#">Contacto</a>
+    </nav>
 
-    <section>
-        <h2>¿Qué es EcoBin?</h2>
-        <p>EcoBin es una empresa que se dedica a fabricar y distribuir contenedores de basura inteligentes.</p>
-    </section>
+    <!-- Main Content -->
+    <main>
 
-    <section>
-        <h2>Cracterísticas de EcoBin</h2>
-        <ul>
-            <li>Capacidad de autocompactación de residuos.</li>
-            <li>Notificaciones en tiempo real cuando el contenedor está lleno.</li>
-            <li>Panel solar para alimentar los sistemas internos.</li>
-            <li>Diseño ecológico y sostenible.</li>
-            <li>Detección de residuos mediante IA avanzada</li>
-            <li>Prevención de uso incorrecto al tirar la basura</li>
-        </ul>
-    </section>
+        <!-- Sección de bienvenida -->
+        <section style="width: 100%; text-align: center; margin-bottom: 40px;">
+            <h2>Bienvenido a Ecobin</h2>
+            <p>Observa el estado de todos los contenedores de tu ciudad en tiempo real.  
+            Ecobin facilita la gestión del reciclaje y ayuda a mantener la ciudad limpia.</p>
+        </section>
 
+        <!-- Tarjetas de contenedores -->
+        <section style="width: 100%; display: flex; flex-wrap: wrap; justify-content: center; gap: 20px;">
 
+            <!-- Tarjeta 1 -->
+            <div class="card">
+                <img src="contenedor1.jpg" alt="Contenedor 1">
+                <div class="card-content">
+                    <h2>Contenedor Palma</h2>
+                    <p>Ubicación: Palma (Pl. Espanya)<br>Tipo: Papel y Cartón</p>
+                    <button>Ver detalles</button>
+                </div>
+            </div>
 
+            <!-- Tarjeta 2 -->
+            <div class="card">
+                <img src="Contenedor.jpg" alt="Contenedor 2">
+                <div class="card-content">
+                    <h2>Contenedor Inca</h2>
+                    <p>Ubicación: Inca<br>Tipo: Plástico</p>
+                    <button>Ver detalles</button>
+                </div>
+            </div>
 
+            <!-- Tarjeta 3 -->
+            <div class="card">
+                <img src="contenedor3.jpg" alt="Contenedor 3">
+                <div class="card-content">
+                    <h2>Contenedor Muro</h2>
+                    <p>Ubicación: Muro<br>Tipo: Cristal</p>
+                    <button>Ver detalles</button>
+                </div>
+            </div>
 
+        </section>
 
+        <!-- Estadísticas globales -->
+        <section style="width: 100%; margin-top: 50px;">
+            <h2 style="text-align: center; margin-bottom: 20px;">Estadísticas Globales</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Tipo de Contenedor</th>
+                        <th>Total</th>
+                        <th>Llenos</th>
+                        <th>Medio Llenos</th>
+                        <th>Vacíos</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Papel y Cartón</td>
+                        <td>50</td>
+                        <td>10</td>
+                        <td>20</td>
+                        <td>20</td>
+                    </tr>
+                    <tr>
+                        <td>Plástico</td>
+                        <td>40</td>
+                        <td>15</td>
+                        <td>10</td>
+                        <td>15</td>
+                    </tr>
+                    <tr>
+                        <td>Cristal</td>
+                        <td>30</td>
+                        <td>5</td>
+                        <td>15</td>
+                        <td>10</td>
+                    </tr>
+                    <tr>
+                        <td>Orgánico</td>
+                        <td>25</td>
+                        <td>12</td>
+                        <td>8</td>
+                        <td>5</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
 
+    </main>
 
-    
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Ecobin. Todos los derechos reservados.</p>
+        <p>Contacto: info@ecobin.com | Tel: 123-456-789</p>
+    </footer>
+
 </body>
 </html>
-
